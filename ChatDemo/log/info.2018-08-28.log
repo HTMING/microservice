@@ -1,0 +1,51 @@
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a1153bc: startup date [Mon Aug 27 20:23:26 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Starting ChatRoomApplication on MING-MBP with PID 939 (/Users/TIJK/IdeaProjects/microservice/ChatDemo/target/classes started by TIJK in /Users/TIJK/IdeaProjects/microservice)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Tue Aug 28 08:42:39 CST 2018]; root of context hierarchy
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/TIJK/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1328 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Tue Aug 28 08:42:39 CST 2018]; root of context hierarchy
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering @ServerEndpoint class: class com.tijk.ChatRoom.Service.WebSocket
+Registering beans for JMX exposure on startup
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/chat'
+Started ChatRoomApplication in 3.197 seconds (JVM running for 4.364)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+【wesocket消息】广播消息，message={"userNum":1,"type":1,"message":"有新的连接"}
+【websocket消息】有新的连接，总数：1
+【websocket消息】连接断开，总数:0
+【wesocket消息】广播消息，message={"userNum":1,"type":1,"message":"有新的连接"}
+【websocket消息】有新的连接，总数：1
+【wesocket消息】广播消息，message={"userNum":2,"type":1,"message":"有新的连接"}
+【wesocket消息】广播消息，message={"userNum":2,"type":1,"message":"有新的连接"}
+【websocket消息】有新的连接，总数：2
+【wesocket消息】广播消息，message={"userNum":2,"type":3,"message":"hello"}
+【wesocket消息】广播消息，message={"userNum":2,"type":3,"message":"hello"}
+【websocket消息】收到客户端发来的消息:hello
+【wesocket消息】广播消息，message={"userNum":2,"type":3,"message":"user1"}
+【wesocket消息】广播消息，message={"userNum":2,"type":3,"message":"user1"}
+【websocket消息】收到客户端发来的消息:user1
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Tue Aug 28 08:42:39 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+【wesocket消息】广播消息，message={"userNum":1,"type":2,"message":"有用户离开"}
+【websocket消息】连接断开，总数:1
+【websocket消息】连接断开，总数:0

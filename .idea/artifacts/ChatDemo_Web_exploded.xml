@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ChatDemo:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ChatDemo_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ChatDemo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ChatDemo" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
